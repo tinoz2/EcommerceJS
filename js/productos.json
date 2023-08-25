@@ -1,0 +1,382 @@
+[
+    {
+        "id": "oferta-1",
+        "titulo": "Pantalones Promo X2",
+        "imagen": "./img/img.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1790
+    },
+    {
+        "id": "oferta-2",
+        "titulo": "Remeras Promo X2",
+        "imagen": "./img/Promox2remeras.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1190
+    },
+    {
+        "id": "oferta-3",
+        "titulo": "Monos Pack X2",
+        "imagen": "./img/lala.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1890
+    },
+    {
+        "id": "oferta-4",
+        "titulo": "Poleras Pack X2",
+        "imagen": "./img/polerax2.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1390
+    },
+    {
+        "id": "oferta-5",
+        "titulo": "Palazzo Pack X2",
+        "imagen": "./img/promopalazzox2.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1790
+    },
+    {
+        "id": "oferta-6",
+        "titulo": "Remerones Pack X2",
+        "imagen": "./img/real.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1290
+    },
+    {
+        "id": "oferta-7",
+        "titulo": "Remeras Promo X2",
+        "imagen": "./img/packreal.jpg",
+        "categoria": {
+            "nombre": "Ofertas",
+            "id": "ofertas"
+        },
+        "precio": 1290
+    },
+    {
+        "id": "buzo-1",
+        "titulo": "Buzo con cierre polar",
+        "imagen": "./img/buzo1.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "buzo-2",
+        "titulo": "Buzo Oversize",
+        "imagen": "./img/buzo2.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 990
+    },
+    {
+        "id": "buzo-3",
+        "titulo": "Buzo cebra elastizado",
+        "imagen": "./img/buzo3.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 990
+    },
+    {
+        "id": "buzo-4",
+        "titulo": "Buzo manga princesa",
+        "imagen": "./img/buzo4.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 990
+    },
+    {
+        "id": "buzo-5",
+        "titulo": "Canguro plush",
+        "imagen": "./img/buzo55.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "buzo-6",
+        "titulo": "Canguro plush",
+        "imagen": "./img/buzo6.jpg",
+        "categoria": {
+            "nombre": "Buzos",
+            "id": "buzos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "mono-1",
+        "titulo": "Monito",
+        "imagen": "./img/MONOOO1.png",
+        "categoria": {
+            "nombre": "Monos",
+            "id": "monos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "mono-2",
+        "titulo": "Monito lanilla",
+        "imagen": "./img/MONO2.png",
+        "categoria": {
+            "nombre": "Monos",
+            "id": "monos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "mono-3",
+        "titulo": "Monito tobillero",
+        "imagen": "./img/lastmonito.png",
+        "categoria": {
+            "nombre": "Monos",
+            "id": "monos"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "poleron-1",
+        "titulo": "Maxipoleron",
+        "imagen": "./img/Poleron1.jpg",
+        "categoria": {
+            "nombre": "Polerones",
+            "id": "polerones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "poleron-2",
+        "titulo": "Poleron polar",
+        "imagen": "./img/poleron2.jpg",
+        "categoria": {
+            "nombre": "Polerones",
+            "id": "polerones"
+        },
+        "precio": 990
+    },
+    {
+        "id": "poleron-3",
+        "titulo": "Poleron con bolsillos",
+        "imagen": "./img/poleron33.jpg",
+        "categoria": {
+            "nombre": "Polerones",
+            "id": "polerones"
+        },
+        "precio": 1290
+    },
+    {
+        "id": "remera-1",
+        "titulo": "Remera princesa",
+        "imagen": "./img/Remera1.png",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 890
+    },
+    {
+        "id": "remera-2",
+        "titulo": "Remera en V",
+        "imagen": "./img/Remera2.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 890
+    },
+    {
+        "id": "remera-3",
+        "titulo": "Remera brodiere",
+        "imagen": "./img/Remera3.png",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 790
+    },
+    {
+        "id": "remera-4",
+        "titulo": "Remeron largo",
+        "imagen": "./img/Remera4.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 790
+    },
+    {
+        "id": "remera-5",
+        "titulo": "Remeron combinado",
+        "imagen": "./img/remera5.png",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 790
+    },
+    {
+        "id": "remera-6",
+        "titulo": "Remera combinada",
+        "imagen": "./img/Remera6.png",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 790
+    },
+    {
+        "id": "remera-7",
+        "titulo": "Remera vuelos",
+        "imagen": "./img/Remera7.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 790
+    },
+    {
+        "id": "remera-8",
+        "titulo": "Remera morley",
+        "imagen": "./img/Remera8.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 1190
+    },
+    {
+        "id": "pantalon-1",
+        "titulo": "Pantalon morley",
+        "imagen": "./img/Pantalon2.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "pantalon-2",
+        "titulo": "Babucha plush",
+        "imagen": "./img/Pantalon3.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "pantalon-3",
+        "titulo": "Palazzo morley",
+        "imagen": "./img/Pantalon4.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1190
+    },
+    {
+        "id": "pantalon-4",
+        "titulo": "Babucha peletizada",
+        "imagen": "./img/Pantalon5.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "pantalon-5",
+        "titulo": "Pantalón palazzo",
+        "imagen": "./img/Pantalon6.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 990
+    },
+    {
+        "id": "pantalon-6",
+        "titulo": "Babucha felpa algodón",
+        "imagen": "./img/Pantalon7.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "pantalon-7",
+        "titulo": "Palazzo estampado",
+        "imagen": "./img/Pantalon8.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1090
+    },
+    {
+        "id": "pantalon-8",
+        "titulo": "Pantalón pescador",
+        "imagen": "./img/Pantalon9.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 890
+    },
+    {
+        "id": "vestido-1",
+        "titulo": "Calza Oxford",
+        "imagen": "./img/Pantalon1.jpg",
+        "categoria": {
+            "nombre": "Vestidos",
+            "id": "vestidos"
+        },
+        "precio": 990
+    },
+    {
+        "id": "vestido-2",
+        "titulo": "Vestido lanilla",
+        "imagen": "./img/Vestido1.jpg",
+        "categoria": {
+            "nombre": "Vestidos",
+            "id": "vestidos"
+        },
+        "precio": 1190
+    },
+    {
+        "id": "vestido-3",
+        "titulo": "Vestido morley",
+        "imagen": "./img/Vestido2.jpg",
+        "categoria": {
+            "nombre": "Vestidos",
+            "id": "vestidos"
+        },
+        "precio": 1190
+    }
+]
