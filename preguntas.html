@@ -14,16 +14,40 @@
     <title>zen | Preguntas</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="subir">
+        <nav class="nav1">
             <img class="asd" src="./img/logo2.png" alt="">
             <h1>zen</h1>
             <ul>
                 <a href="./index.html">Inicio</a>
-                <a href="./tienda.html">Tienda<i class="arrow fa-solid fa-arrow-down" style="color: #000000;"></i></a>
+                <a href="./tienda.html">Tienda</a>
                 <a href="./preguntas.html">Preguntas</a>
                 <a href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
             </ul>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary disabled nav2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="asd" src="./img/logo2.png" alt=""><h1>zen</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="parrafo-preguntas">
@@ -41,7 +65,7 @@
         <img class="img-preguntas" src="./img/metodos-de-envio.jpg" alt="">
     </main>
 
-    <a href=""><button class="myBtn" href="#subir"><i class="fa-solid fa-up-long"></i></button></a>
+    <a href="#subir"><button class="myBtn"><i class="fa-solid fa-up-long"></i></button></a>
 
     <footer>
         <h2>zen</h2>
@@ -52,5 +76,6 @@
         <a target="_blank" href="https://api.whatsapp.com/message/OCZJ4PP52WIEF1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp" style="color: white;"></i></a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

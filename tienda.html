@@ -11,23 +11,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/logo2.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>zen | Tienda</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="subir">
+        <nav class="nav1">
             <img class="asd" src="./img/logo2.png" alt="">
             <h1>zen</h1>
             <ul>
                 <a href="./index.html">Inicio</a>
-                <a href="./tienda.html">Tienda<i class="arrow fa-solid fa-arrow-down" style="color: #000000;"></i></a>
+                <a href="./tienda.html">Tienda</a>
                 <a href="./preguntas.html">Preguntas</a>
                 <a href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
             </ul>
         </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary disabled nav2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="asd" src="./img/logo2.png" alt=""><h1>zen</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="titulo-tienda">
+    <div data-aos="fade-up" class="titulo-tienda">
         <h2>
             Todos los productos
         </h2>
@@ -41,16 +66,31 @@
             <a class="button-categoria" id="vestidos" href="#vestidos">Vestidos</a>
         </ul>
     </div>
-    <div class="container-h3">
+    <div data-aos="fade-up" class="container-h3">
         <h3 class="h3-ofertas" id="titulo-principal">Todos</h3>
     </div>
-    <main id="productos-container" class="container">
+    <main data-aos="fade-up" id="productos-container" class="container">
 
     </main>
     
-    <a href=""><button class="myBtn" href="#subir"><i class="fa-solid fa-up-long"></i></button></a>
+    <a href="#subir"><button class="myBtn"><i class="fa-solid fa-up-long"></i></button></a>
 
+    <footer>
+        <h2>zen</h2>
+        <h3>zenaccesorioseindumentaria@gmail.com</h3>
+        <h4>&copy;2023 por ZEN</h4>
+        <a target="_blank" href="https://www.instagram.com/zen__accesorios/?r=nametag"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+        <a target="_blank" href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fzenaccesorios%2F"><i class="fa-brands fa-facebook" style="color: white;"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/message/OCZJ4PP52WIEF1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp" style="color: white;"></i></a>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

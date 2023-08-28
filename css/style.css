@@ -5,7 +5,6 @@
 }
 html, body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
     background-color: #f9f9f9;
     width: 100%;
     height: 100%;
@@ -69,10 +68,6 @@ section div p{
 section div h2{
     font-size: 25px;
     font-weight: 100;
-}
-.carousel-inner{
-    max-height: 28rem;
-    width: 100%;
 }
 main .semifooter{
     text-align: center;
@@ -322,7 +317,7 @@ span{
     gap: 2rem;
     margin: 2rem 10rem 0 10rem;
 }
-.myBtn {
+.myBtn{
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -342,17 +337,34 @@ span{
     color: #430f58;
     transition: 0.2s ease-in-out;
 }
+.navbar-toggler{
+    border: 2px solid #430f58;
+}
+header nav ul{
+    text-transform: uppercase;
+}
+nav ul a:hover{
+    border-bottom: 2px solid #430f58;
+}
+.carousel-inner{
+    max-height: 40rem;
+    filter: brightness(0.6);
+    border: 5px solid #430f58;
+}
 .disabled{
     display: none;
 }
 @media (max-width: 576px){
     .titulo-tienda ul a{
         margin: 1rem 0 1rem 0;
-        padding: 2rem;
+        padding: 1rem;
         display: inline-block;
     }
-    .titulo-tienda ul{
-        margin-bottom: 6rem;
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        text-transform: uppercase;
     }
     .nombre-prenda, .valor{
         font-size: 1rem;
@@ -390,11 +402,12 @@ span{
         justify-content: flex-start;
         padding-right: 0;
     }
-    .carro{
-        margin: 13rem 1rem 1rem 1rem;
-    }
     .vaciado{
         margin-top: 1rem;
+    }
+    .myBtn{
+        right: 15px;
+        bottom: 15px;
     }
 }
 @media (max-width: 480px){
@@ -409,6 +422,10 @@ span{
     .img-preguntas{
         width: 95%;
     }
+    .carousel-inner{
+        max-height: 17rem;
+        filter: brightness(0.6);
+    }
 }
 @media (max-width: 510px){
     .menu-carrito{
@@ -417,28 +434,38 @@ span{
 }
 @media (max-width: 976px){
     header nav ul a{
-        margin: 1rem;
+        margin: 1.5rem;
     }
 }
-@media (max-width: 704px){
-    header nav ul a{
-        margin: 0.7rem;
-        font-size: 1rem;
-    }
-}  
 @media (max-width: 624px){
-    nav{
-        display: block;
-    }
-    header nav ul{
+    .nav2{
         display: flex;
-        justify-content: space-between;
     }
-    header nav ul a{
-        margin: 0.8rem;
+    .nav1{
+        display: none;
     }
     .titulo-tienda h2{
         font-size: 2rem;
+    }
+    header nav h1{
+        font-size: 60px;
+        margin: 0 0 10px 90px;
+    }
+    .asd{
+        margin: 0;
+        width: 80px;
+    }
+    section .nosotros{
+        margin: 60px 0 100px 0;
+    }
+    .titulo-tienda{
+        margin: 3rem 0 5rem 0;
+    }
+    .parrafo-preguntas{
+        margin: 3rem;
+    }
+    .carro{
+        margin: 3rem;
     }
 }
 @media (max-width: 400px){
