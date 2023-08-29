@@ -76,6 +76,7 @@ function agregarAlCarrito(e){
         gravity: "top",
         position: "right",
         stopOnFocus: true,
+        close: true,
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
         borderRadius: "2rem",
