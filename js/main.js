@@ -63,11 +63,7 @@ let productosEnCarrito2
 
 let productosEnCarrito2LS = localStorage.getItem("productos-en-el-carrito")
 
-if(productosEnCarrito2LS){
-    productosEnCarrito2 = JSON.parse(productosEnCarrito2LS)
-}else{
-    productosEnCarrito2 = []
-}
+productosEnCarrito2LS ? productosEnCarrito2 = JSON.parse(productosEnCarrito2LS) : productosEnCarrito2 = []
 
 function agregarAlCarrito(e){
     Toastify({

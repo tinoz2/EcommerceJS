@@ -5,11 +5,10 @@ const carritoVacio = document.getElementById("carrito-vacio")
 const carritoProductos = document.getElementById("carrito-productos")
 const carritoAcciones = document.getElementById("carrito-acciones")
 const carritoComprado = document.getElementById("carrito-comprado")
-let buttonEliminar = document.querySelectorAll(".eliminar")
 const botonVaciar = document.getElementById("vaciaste")
 const carritoTotal = document.getElementById("total")
 const botonComprar = document.getElementById("compraste")
-
+let buttonEliminar = document.querySelectorAll(".eliminar")
 
 function cargarProductosCarrito(){
 
@@ -125,14 +124,12 @@ function comprarCarrito(){
     productosEnCarrito2.length = 0
     localStorage.setItem("productos-en-el-carrito", JSON.stringify(productosEnCarrito2))
     cargarProductosCarrito()
-    if (productosEnCarrito2 && productosEnCarrito2.length > 0){
-        
-    }else{
-        carritoVacio.classList.add("disabled")
-        carritoProductos.classList.add("disabled")
-        carritoAcciones.classList.add("disabled")
-        carritoComprado.classList.remove("disabled")
-    }
+    
+    productosEnCarrito2 && productosEnCarrito2.length > 0 ? true : 
+    carritoVacio.classList.add("disabled")
+    carritoProductos.classList.add("disabled")
+    carritoAcciones.classList.add("disabled")
+    carritoComprado.classList.remove("disabled")
 }
 
 function actualizarTotal(){
