@@ -11,8 +11,16 @@ const contenedorTarjetas = document.getElementById("productos-container");
 const buttonCategoria = document.querySelectorAll(".button-categoria");
 const tituloPrincipal = document.getElementById("titulo-principal")
 let botonesAgregar = document.querySelectorAll(".add")
+const numerito = document.getElementById("numerito")
+const numerito2 = document.getElementById("numerito2")
 
 function cargarProductos(productosElegidos){
+
+
+    productos.sort((a, b) => a.precio - b.precio);
+  
+    productos.forEach((producto) => {
+    });
 
     contenedorTarjetas.innerHTML = "";
 
@@ -63,7 +71,14 @@ let productosEnCarrito2
 
 let productosEnCarrito2LS = localStorage.getItem("productos-en-el-carrito")
 
-productosEnCarrito2LS ? productosEnCarrito2 = JSON.parse(productosEnCarrito2LS) : productosEnCarrito2 = []
+if(productosEnCarrito2LS){
+    productosEnCarrito2 = JSON.parse(productosEnCarrito2LS)
+    actualizarNumerito()
+    actualizarNumerito2()
+}
+else{
+    productosEnCarrito2 = []
+}
 
 function agregarAlCarrito(e){
     Toastify({
@@ -76,8 +91,8 @@ function agregarAlCarrito(e){
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
         borderRadius: "2rem",
-        fontSize: "1rem",
-        padding: "1.2rem",
+        fontSize: "0.75rem",
+        padding: "0.75rem",
         textTransform: "upperCase"
         },
         offset: {
@@ -97,5 +112,18 @@ function agregarAlCarrito(e){
         productosAgregado.cantidad = 1
         productosEnCarrito2.push(productosAgregado)
     }
+
+    actualizarNumerito()
+    actualizarNumerito2()
+
     localStorage.setItem("productos-en-el-carrito", JSON.stringify(productosEnCarrito2))
+}
+
+function actualizarNumerito(){
+    let nuevoNumerito = productosEnCarrito2.reduce((acc, producto) => acc + producto.cantidad, 0)
+    numerito.innerText = nuevoNumerito
+}
+function actualizarNumerito2(){
+    let nuevoNumerito = productosEnCarrito2.reduce((acc, producto) => acc + producto.cantidad, 0)
+    numerito2.innerText = nuevoNumerito
 }

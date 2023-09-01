@@ -79,8 +79,8 @@ function eliminarCarrito(e){
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
         borderRadius: "2rem",
-        fontSize: "1rem",
-        padding: "1.2rem",
+        fontSize: "0.75rem",
+        padding: "0.75rem",
         textTransform: "upperCase"
         },
         offset: {
