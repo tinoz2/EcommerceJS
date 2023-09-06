@@ -112,9 +112,10 @@ function vaciarCarrito(){
         confirmButtonText: 'Si, borralo!'
         }).then((result)=> {
             if(result.isConfirmed){
-                productosEnCarrito2.length = 0
-                localStorage.setItem("productos-en-el-carrito", JSON.stringify(productosEnCarrito2))
-                cargarProductosCarrito()
+
+                localStorage.clear();
+                productosEnCarrito2 = []
+                cargarProductosCarrito();
             }
         })
 }
