@@ -91,12 +91,14 @@ function eliminarCarrito(e){
         onClick: function(){}
     }).showToast();
 
-    const idBoton = e.currentTarget.id
-    const index = productosEnCarrito2.findIndex(producto => producto.id === idBoton)
+    const idBoton = e.currentTarget.id;
+    const index = productosEnCarrito2.findIndex(producto => producto.id === idBoton);
     productosEnCarrito2.splice(index, 1)
-    cargarProductosCarrito()
 
-    localStorage.setItem("productos-en-el-carrito",JSON.stringify(productosEnCarrito2))
+    localStorage.removeItem("productos-en-el-carrito");
+    localStorage.setItem("productos-en-el-carrito",JSON.stringify(productosEnCarrito2));
+
+    cargarProductosCarrito();
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito)
