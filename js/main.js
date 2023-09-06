@@ -18,7 +18,6 @@ function cargarProductos(productosElegidos){
 
 
     productos.sort((a, b) => a.precio - b.precio);
-  
     productos.forEach((producto) => {
     });
 
@@ -83,16 +82,17 @@ else{
 function agregarAlCarrito(e){
     Toastify({
         text: "Producto Agregado",
-        duration: 1500,
+        duration: 1000,
         gravity: "top",
         position: "right",
         stopOnFocus: true,
         close: true,
+        className: "tsresponsive",
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
         borderRadius: "2rem",
-        fontSize: "0.75rem",
-        padding: "0.75rem",
+        fontSize: "1rem",
+        padding: "1rem",
         textTransform: "upperCase"
         },
         offset: {
