@@ -1,11 +1,18 @@
 let productos = []
 
-fetch("./js/productos.json")
-    .then(response => response.json())
-    .then(data => {
+const fetchData = async () => {
+    try{
+        const response = await fetch("./js/productos.json")
+        const data = await response.json()
         productos = data
         cargarProductos(productos)
-    })
+    }
+    catch(error){
+        console.error("Error en los productos", error)
+    }
+};
+
+fetchData();
 
 const contenedorTarjetas = document.getElementById("productos-container");
 const buttonCategoria = document.querySelectorAll(".button-categoria");
@@ -127,3 +134,24 @@ function actualizarNumerito2(){
     let nuevoNumerito = productosEnCarrito2.reduce((acc, producto) => acc + producto.cantidad, 0)
     numerito2.innerText = nuevoNumerito
 }
+
+// const plus = document.getElementById("plus");
+// const minus = document.getElementById("minus");
+// const num = document.getElementById("num");
+
+// let a = 1;
+
+// plus.addEventListener("click", ()=> {
+//     a++;
+//     a = (a < 10) ? "0" + a : a;
+//     num.innerText = a;
+// });
+
+// minus.addEventListener("click", ()=> {
+    
+//     if(a > 1){
+//         a--;
+//         a = (a < 10) ? "0" + a : a;
+//         num.innerText = a;
+//     }
+// });

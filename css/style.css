@@ -115,6 +115,9 @@ span{
     color: #352961;
     line-height: 3;
 }
+#plus, #minus{
+    cursor: pointer;
+}
 .titulo-tienda{
     margin: 12rem 0 5rem 0;
     text-align: center;
@@ -357,6 +360,9 @@ nav ul a:hover{
     background-color: #430f58;
     border-radius: 10px;
     color: white;
+}
+.container-hidden{
+    display: none;
 }
 .disabled{
     display: none;
