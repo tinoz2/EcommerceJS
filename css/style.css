@@ -9,12 +9,11 @@ html, body{
     width: 100%;
     height: 100%;
 }
-body::-webkit-scrollbar{
-    width: 10px;
+#nav-open::-webkit-scrollbar {
+    width: 0 !important; 
 }
-body::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-    background: #430f58;
+#nav-open {
+    scrollbar-width: none;
 }
 header nav h1{
     font-size: 80px;
@@ -267,6 +266,9 @@ span{
 .eliminar{
     border: none;
     background-color: transparent;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 .menu-carrito{
     display: flex;
@@ -361,8 +363,168 @@ nav ul a:hover{
     border-radius: 10px;
     color: white;
 }
+.div-preview{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.preview{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: #352961;
+    font-size: 15px;
+}
+#modal-cart{
+    cursor: pointer;
+}
+.preview:hover{
+    background-color: #352961;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: white;
+    transition: 0.2s;
+}
+.eliminar2{
+    font-size: 1rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.swal2-image{
+    border-radius: 1rem;
+}
+#nav-open {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 350px;
+    height: 100%;
+    border-radius: 0 0 0 2rem;
+    border: 2px solid #e3e3e3;
+    box-shadow: 2px 2px 15px #e3e3e3;
+    background-color: white;
+    z-index: 1000; 
+    overflow-y: scroll;
+    transform: translateX(100%);
+}
+
+#nav-open.visible {
+    transform: translateX(0);
+}
+.nav-open2{
+    position: fixed;
+    top: 0;
+    right: 23rem;
+    text-align: center;
+    width: 17rem;
+    border-radius: 0 0 2rem 2rem;
+    border: 2px solid #e3e3e3;
+    background-color: white;
+    z-index: 1000; 
+    overflow-y: scroll;
+    transform: translateX(100%);
+}
+.nav-open2.visible{
+    transform: translateX(0);
+}
+.img-modal{
+    width: 50%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    border: 2px solid #352961;
+}
+.container-x{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.container-prenda{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-cart-div{
+    text-align: center;
+    margin: 1rem;
+}
+.container-modal-precio{
+    margin: 4rem 0 0rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container-modal-botones{
+    margin: 2rem 0 2rem 0;
+}
+.container-prenda{
+    display: flex;
+}
+.comprar-modal{
+    border-radius: 1rem;
+    background-color: #e3e3e3;
+    border: none;
+    color: #352961;
+    margin: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+.comprar-modal:hover{
+    color: white;
+    background-color: #352961;
+}
+.comprar-ahora-modal{
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-decoration: none;
+}
+.boton-cerrar-modal{
+    border: none;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e3e3e3;
+}
+.button-seguir{
+    margin-top: 4rem;
+}
+.producto-modal{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.total-modal{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 900;
+}
+.container-cantidad-prenda, .container-precio-prenda{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.container-modal-total{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.p-c{
+    color: black;
+}
 .container-hidden{
     display: none;
+}
+.visible{
+    display: block;
 }
 .disabled{
     display: none;
@@ -472,6 +634,8 @@ nav ul a:hover{
     }
     .titulo-tienda h2{
         font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     header nav h1{
         font-size: 60px;
@@ -485,7 +649,7 @@ nav ul a:hover{
         margin: 60px 0 100px 0;
     }
     .titulo-tienda{
-        margin: 3rem 0 5rem 0;
+        margin: 3rem 0 2rem 0;
     }
     .parrafo-preguntas{
         margin: 3rem;

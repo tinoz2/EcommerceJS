@@ -1,4 +1,4 @@
-let productos = []
+let productos = [];
 
 const fetchData = async () => {
     try{
@@ -16,13 +16,13 @@ fetchData();
 
 const contenedorTarjetas = document.getElementById("productos-container");
 const buttonCategoria = document.querySelectorAll(".button-categoria");
-const tituloPrincipal = document.getElementById("titulo-principal")
-let botonesAgregar = document.querySelectorAll(".add")
-const numerito = document.getElementById("numerito")
-const numerito2 = document.getElementById("numerito2")
+const tituloPrincipal = document.getElementById("titulo-principal");
+let botonesAgregar = document.querySelectorAll(".add");
+const numerito = document.getElementById("numerito");
+const numerito2 = document.getElementById("numerito2");
+
 
 function cargarProductos(productosElegidos){
-
 
     productos.sort((a, b) => a.precio - b.precio);
     productos.forEach((producto) => {
@@ -35,21 +35,30 @@ function cargarProductos(productosElegidos){
         div.classList.add("producto");
         div.innerHTML = `
         <div class="container-productos">
-        <div class="producto">
-            <img loading="lazy" class="img-producto" src="${producto.imagen}" alt="${producto.titulo}">
-        </div>
-        <div class="container-valores">
-            <h3 class="nombre-prenda">${producto.titulo}</h3>
-            <p class="valor">${producto.precio}$ <span class="uy">UY</span></p>
-            <button class="add" id="${producto.id}">Agregar</button>
-        </div>
+            <div class="producto">
+                <img loading="lazy" class="img-producto" src="${producto.imagen}" alt="${producto.titulo}">
+            </div>
+                <div class="container-valores">
+                    <h3 class="nombre-prenda">${producto.titulo}</h3>
+                    <p class="valor">${producto.precio}$ <span class="uy">UY</span></p>
+                <div class="div-preview">
+                    <button id="preview" class="preview">Vista previa</button>
+                </div>
+                    <button class="add" id="${producto.id}">Agregar</button>
+            </div>
         </div>
         `;
+
+        const previewButton = div.querySelector("#preview");
+        if (previewButton) {
+            previewButton.addEventListener("click", showPreview);
+        };
+
         contenedorTarjetas.appendChild(div);
     });
 
-    actualizarBotonesAgregar()
-}
+    actualizarBotonesAgregar();
+};
 
 
 buttonCategoria.forEach(boton =>{
@@ -68,23 +77,23 @@ buttonCategoria.forEach(boton =>{
 function actualizarBotonesAgregar(){
     botonesAgregar = document.querySelectorAll(".add")
 
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito)
-    })
-}
+    botonesAgregar.forEach((boton) => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+};
 
-let productosEnCarrito2
+let productosEnCarrito2;
 
-let productosEnCarrito2LS = localStorage.getItem("productos-en-el-carrito")
+let productosEnCarrito2LS = localStorage.getItem("productos-en-el-carrito");
 
 if(productosEnCarrito2LS){
     productosEnCarrito2 = JSON.parse(productosEnCarrito2LS)
-    actualizarNumerito()
-    actualizarNumerito2()
+    actualizarNumerito();
+    actualizarNumerito2();
 }
 else{
     productosEnCarrito2 = []
-}
+};
 
 function agregarAlCarrito(e){
     Toastify({
@@ -109,49 +118,49 @@ function agregarAlCarrito(e){
         onClick: function(){}
     }).showToast();
 
-    const idBoton = e.currentTarget.id
-    const productosAgregado = productos.find(producto => producto.id === idBoton)
+    const idBoton = e.currentTarget.id;
+    const productosAgregado = productos.find(producto => producto.id === idBoton);
 
     if(productosEnCarrito2.some(producto => producto.id === idBoton)){
         const index = productosEnCarrito2.findIndex(producto => producto.id === idBoton)
         productosEnCarrito2[index].cantidad++
     }else{
-        productosAgregado.cantidad = 1
-        productosEnCarrito2.push(productosAgregado)
-    }
+        productosAgregado.cantidad = 1;
+        productosEnCarrito2.push(productosAgregado);
+    };
 
-    actualizarNumerito()
-    actualizarNumerito2()
+    actualizarNumerito();
+    actualizarNumerito2();
+    cargarProductos2();
 
-    localStorage.setItem("productos-en-el-carrito", JSON.stringify(productosEnCarrito2))
-}
+    localStorage.setItem("productos-en-el-carrito", JSON.stringify(productosEnCarrito2));
+};
 
 function actualizarNumerito(){
     let nuevoNumerito = productosEnCarrito2.reduce((acc, producto) => acc + producto.cantidad, 0)
     numerito.innerText = nuevoNumerito
-}
+};
+
 function actualizarNumerito2(){
     let nuevoNumerito = productosEnCarrito2.reduce((acc, producto) => acc + producto.cantidad, 0)
     numerito2.innerText = nuevoNumerito
-}
+};
 
-// const plus = document.getElementById("plus");
-// const minus = document.getElementById("minus");
-// const num = document.getElementById("num");
+const preview = document.getElementById("preview");
 
-// let a = 1;
+preview.addEventListener("click", showPreview);
 
-// plus.addEventListener("click", ()=> {
-//     a++;
-//     a = (a < 10) ? "0" + a : a;
-//     num.innerText = a;
-// });
-
-// minus.addEventListener("click", ()=> {
-    
-//     if(a > 1){
-//         a--;
-//         a = (a < 10) ? "0" + a : a;
-//         num.innerText = a;
-//     }
-// });
+function showPreview(){
+    Swal.fire({
+        title: "ZEN",
+        text: "Talle S y M disponibles.",
+        imageUrl: './imgoptimizadas/Sweet2.webp',
+        imageWidth: 400,
+        imageHeight: 400,
+        imageAlt: 'ZenPreview',
+    })
+        .then((result)=> {
+        if(result.isConfirmed){
+        }
+    });
+};
