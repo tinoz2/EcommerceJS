@@ -71,7 +71,7 @@ function actualizarBotonesEliminar(){
 function eliminarCarrito(e){
     Toastify({
         text: "Producto Eliminado",
-        duration: 1000,
+        duration: 500,
         gravity: "top",
         position: "right",
         stopOnFocus: true,
