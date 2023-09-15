@@ -102,7 +102,6 @@ function agregarAlCarrito(e){
         gravity: "top",
         position: "right",
         stopOnFocus: true,
-        close: true,
         className: "tsresponsive",
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
@@ -155,8 +154,8 @@ function showPreview(){
         title: "ZEN",
         text: "Talle S y M disponibles.",
         imageUrl: './imgoptimizadas/Sweet2.webp',
-        imageWidth: 400,
-        imageHeight: 400,
+        imageWidth: 300,
+        imageHeight: 300,
         imageAlt: 'ZenPreview',
     })
         .then((result)=> {

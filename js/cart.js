@@ -75,7 +75,6 @@ function eliminarCarrito(e){
         gravity: "top",
         position: "right",
         stopOnFocus: true,
-        close: true,
         className: "tsresponsive",
         style: {
         background: "linear-gradient(to right, #352961, #430f58)",
