@@ -374,7 +374,7 @@ nav ul a:hover{
     cursor: pointer;
     background-color: white;
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     color: #352961;
     font-size: 15px;
 }
@@ -384,7 +384,6 @@ nav ul a:hover{
 .preview:hover{
     background-color: #352961;
     border-radius: 2rem;
-    padding: 0.5rem;
     color: white;
     transition: 0.2s;
 }
