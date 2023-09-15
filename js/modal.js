@@ -36,6 +36,8 @@ function cargarProductos2(){
     });
     actualizarBotonesAgregar();
     totalModal();
+    actualizarNumerito();
+    actualizarNumerito2();
 };
 
 function eliminarProductoDeCarrito(e) {
